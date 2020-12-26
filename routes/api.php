@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ArticleController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -28,7 +28,7 @@ Route::get('articles/{id}','ArticleController@show');
 Route::post('articles','ArticleController@store');
 
 //update article
-Route::post('articles','ArticleController@store');
+Route::post('articles','ArticleController@store');//24:54
 
 //delete article
 Route::delete('articles','ArticleController@destroy');
